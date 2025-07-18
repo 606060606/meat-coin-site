@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MEAT Coin - Grill the Charts</title>
+  <meta name="description" content="MEAT Coin - Grill the charts. Stake your steak. The juiciest meme token on the blockchain.">
+  <meta property="og:title" content="MEAT Coin - Grill the Charts">
+  <meta property="og:description" content="The juiciest meme token. Grill the charts. Stake your steak.">
+  <meta property="og:image" content="https://meat-coin.netlify.app/og-image.png">
+  <meta property="og:url" content="https://meat-coin.netlify.app/">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    html, body {
+      margin: 0;
+      height: 100%;
+      overflow: hidden;
+      font-family: 'Roboto', sans-serif;
+      background: #ffe8e0;
+      color: #333;
+      text-align: center;
+    }
+    .roadmap-section {
+      position: relative;
+      height: 100%;
+      background-color: #ff5733;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+    .roadmap-background {
+      position: absolute;
+      width: 200%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      animation: scrollBackground 20s linear infinite;
+    }
+    .roadmap-line {
+      font-family: 'Fredoka One', cursive;
+      font-size: 3rem;
+      color: rgba(255,255,255,0.15);
+      white-space: nowrap;
+    }
+    @keyframes scrollBackground {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    .roadmap-box {
+      position: relative;
+      background: rgba(255, 255, 255, 0.95);
+      border: 3px solid #000;
+      border-radius: 20px;
+      padding: 40px;
+      width: 90%;
+      max-width: 900px;
+      box-shadow: 6px 6px 0 #000;
+      z-index: 1;
+    }
+    .title-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 20px;
+    }
+    .title-container .logo {
+      height: 100px;
+    }
+    .title-container .title-text {
+      font-family: 'Fredoka One', cursive;
+      font-size: 3.5rem;
+      color: #d41e00;
+    }
+    .roadmap-box p {
+      font-size: 1.5rem;
+      margin: 15px 0;
+      line-height: 1.6;
+    }
+    .info-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin: 20px 0;
+    }
+    .info-btn {
+      background: #fff;
+      border: 3px solid #000;
+      border-radius: 15px;
+      padding: 10px 20px;
+      font-family: 'Fredoka One', cursive;
+      font-size: 1.3rem;
+      box-shadow: 4px 4px 0 #000;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+    }
+    .info-btn:hover {
+      background: #f0f0f0;
+      transform: translate(1px, 1px);
+      box-shadow: 2px 2px 0 #000;
+    }
+    .buy-btn {
+      background-color: #b2f0dc;
+      color: #000;
+      padding: 15px 40px;
+      font-size: 1.5rem;
+      font-family: 'Fredoka One', cursive;
+      border: 3px solid #000;
+      border-radius: 15px;
+      cursor: pointer;
+      margin-top: 20px;
+      box-shadow: 3px 3px 0 #000;
+      transition: all 0.2s ease-in-out;
+    }
+    .buy-btn:hover {
+      background-color: #a0e0cc;
+      transform: translate(2px, 2px);
+      box-shadow: 1px 1px 0 #000;
+    }
+  </style>
+</head>
+<body>
+  <div class="roadmap-section">
+    <div class="roadmap-background">
+      <div class="roadmap-line">🔥 ROADMAP ROADMAP ROADMAP ROADMAP ROADMAP ROADMAP 🔥</div>
+      <div class="roadmap-line">🚀 MEME DROP MEME DROP MEME DROP MEME DROP 🚀</div>
+      <div class="roadmap-line">🥩 STAKE YOUR STEAK STAKE YOUR STEAK STAKE YOUR STEAK 🥩</div>
+    </div>
+    <div class="roadmap-box">
+      <div class="title-container">
+        <img src="logo.png" alt="MEAT Coin Logo" class="logo">
+        <span class="title-text">MEAT Coin</span>
+      </div>
+      <p>Grill the charts. Stake your steak.</p>
+      <p>🚀 We are LIVE! Buy the token now and join the BBQ revolution.</p>
+      <div class="info-buttons">
+        <div class="info-btn" onclick="copyText('$MEAT')">SYMBOL: $MEAT</div>
+        <div class="info-btn" onclick="copyText('0x1234...ABCD')">CONTRACT: 0x1234...ABCD</div>
+      </div>
+      <button class="buy-btn" onclick="window.open('https://pump.fun', '_blank')">BUY NOW</button>
+    </div>
+  </div>
+  <script>
+    function copyText(text) {
+      navigator.clipboard.writeText(text).then(() => {
+        alert(text + " copied to clipboard!");
+      });
+    }
+  </script>
+</body>
+</html>
